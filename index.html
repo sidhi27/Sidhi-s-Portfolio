@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6cfab0ccf6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Engineer</p>
+                <h1>Hi,I'm <span>Sidhi</span>Aggarwal</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>I am currently attending the Arya Institute Of Engineering & Technology.This is my last year of
+                        being an
+                        undergrad.I will be graduating by 2023 with my Bachelor of Technology in Computer Science.</p>
+                    <p>I am having good performance history and skilled in C++,HTML,CSS,JavaScript,MySql Basics.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('PROJECTS')">PROJECTS</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="SkILLS">
+                        <ul>
+                            <li><span>C++</span><br>Programming Language</li>
+                            <li><span>HTML</span><br>Web Development</li>
+                            <li><span>CSS</span><br>Web Development</li>
+                            <li><span>JavaScript</span><br>Web Development</li>
+                            <li><span>Data Structure and Algorithm</span><br>A Data Structure is a named location that
+                                can be used to store
+                                and organize data.An Algorithm is a collection of steps to solve a particular problem.
+                            </li>
+                            <li><span>MySql Basics</span><br>Database Management System</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="EDUCATION">
+                        <ul>
+                            <li><span>Computer Science undergraduate 2019-2023(current)</span><br>Arya Institute of
+                                Engineering and Technology</li>
+                            <li><span>Intermediate 2019</span><br>Good Shepherd Public School</li>
+                            <li><span>Matriculation 2017</span><br>Good Shepherd Public School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="PROJECTS">
+                        <ul>
+                            <li><span>Portfolio Website</span><br>Using HTML,CSS & JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------services---------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-css3"></i>
+                        <h2>Frontend Developer</h2>
+                        <p>A front-end developer builds the front-end portion of websites and web applications—that is,
+                            the part that users actually see and interact with.
+                            A front-end developer creates websites and applications using web languages such as HTML,
+                            CSS, and JavaScript that allow users to access and
+                            interact with the site or app</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>C++ Programmer</h2>
+                        <p>C++ is an object-oriented programming (OOP) language that is viewed by many as the best
+                            language for creating large-scale applications. C++ is a superset
+                            of the C language. A related programming language, Java, is based on C++ but optimized for
+                            the distribution of program objects in a network such as the
+                            Internet.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------portfolio--------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="images/work.jpg">
+                        <div class="layer">
+                            <h3>Front End Developer</h3>
+                            <p>Front end development is a style of computer programming that focuses on the coding and
+                                creation of elements
+                                and features of a website that will then be seen by the user. It's about making sure the
+                                visual aspects of a website are functional</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-----------contact----------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>sidhisingla26@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>7976327321</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/sidhi.singla.73"><i
+                                    class="fa-brands fa-square-facebook"></i></a>
+                            <a href="www.linkedin.com/in/sidhi-aggarwal-a11942208"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/_.lively._.core._/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/sidhi27"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.codingninjas.com/codestudio/profile/480f0254-c6ad-4e78-9e79-ca45e02e3a7d"><i class="fa-solid fa-circle-nodes"></i></a>
+                            <a href="https://leetcode.com/Sidhi26/"><i class="fa-brands fa-free-code-camp"></i></a>
+                        </div>
+                        <a href="images/Sidhi's Resume (1).pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg">Hello</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright©Sidhi</p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxNqV4Zu9j0r-oQiEHNkmbv9ylD5HVQfaWgh7_iW9oDRGayJDrvwatp0n0sRVn9wdOgEQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message Sent Succesfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+
+</html>
